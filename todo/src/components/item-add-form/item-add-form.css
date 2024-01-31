@@ -1,7 +1,28 @@
-.item-add-form{
-    margin-top: 10px;
+.item-add-form {
+  display: flex;
+  margin-top: 10px;
 }
 
-.item-add-form input{
-    margin-right: 3px;
+.item-add-form input {
+  flex-grow: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 3px;
+}
+
+.item-add-form button {
+  background-color: #575757; 
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.item-add-form button:hover {
+  background-color: #1e1e1f;
 }

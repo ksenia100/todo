@@ -1,5 +1,18 @@
 .todo-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 1.25rem;
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.todo-list-item:hover {
+  background-color: #f9f9f9;
 }
 
 .todo-list-item button {
@@ -8,6 +21,7 @@
 }
 
 .todo-list-item-label {
+  flex-grow: 1;
   margin-left: 1.25rem;
   line-height: 35px;
   cursor: pointer;
@@ -20,5 +34,28 @@
 
 .todo-list-item.important .todo-list-item-label {
   font-weight: bold;
-  color: steelblue;
+  color: rgb(239, 33, 54);
+}
+
+.todo-list-item .btn {
+  background-color: #575757; 
+  color: #555;
+  border: none;
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-list-item .btn:hover {
+  background-color: #ddd;
+}
+
+.todo-list-item .btn-success {
+  color: #28a745;
+}
+
+.todo-list-item .btn-danger {
+  color: #dc3545;
 }
